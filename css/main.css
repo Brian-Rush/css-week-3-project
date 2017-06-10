@@ -14,15 +14,44 @@ footer {
   font-family: "Raleway", sans-serif;
 }
 
+header * {
+  border: 1px dashed red;
+}
+
 header {
   height: 200px;
   width: 100vw;
   background-color: #1f1a11;
+  padding-top: 20px;
 }
-
-#logo {
+header #logo {
+  width: calc(60% - 8px);
+  float: left;
+  margin-left: 5px;
+  max-height: 150px;
+  height: auto;
+  display: block;
+}
+header #greg-transparent {
+  width: calc(40% - 7px);
+  float: left;
+  margin-left: 5px;
   height: 150px;
-  width: auto;
+  display: block;
+}
+header #greg-transparent img {
+  height: 100%;
+  width: calc($mobile-header-element-height / 1.62304688);
+  display: block;
+  margin: 0 auto;
+}
+header .character-name {
+  width: calc(60% - 8px);
+  float: left;
+  margin-left: 5px;
+  display: block;
+  color: #6f6938;
+  letter-spacing: .3em;
 }
 
 #greg-transparent {

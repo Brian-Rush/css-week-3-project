@@ -1,19 +1,56 @@
+header * {
+  border: 1px dashed red;
+}
+
 header {
   height: 200px;
   width: 100vw;
   background-color: $eternity;
+  padding-top: 20px;
   // $onyx: #11100b;
   // $eternity: #1f1a11;
   // $driftwood: #b08850;
   // $tobacco-brown: #6b5c3d;
   // $yellow-metal: #6f6938;
   // $space-shuttle
+  // @include grid-media($header-grid);
+
+  #logo {
+    @include grid-column(3, $header-grid);
+    max-height: $mobile-header-element-height;
+    height: auto;
+    display: block;
+    // width: auto;
+  }
+  #greg-transparent {
+    @include grid-column(2, $header-grid);
+    height: $mobile-header-element-height;
+    display: block;
+  }
+
+  #greg-transparent img {
+    height: 100%;
+    width: $greg-transparent-width;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .character-name {
+    @include grid-column(3, $header-grid);
+    display: block;
+    color: $yellow-metal;
+    letter-spacing: .3em;
+  }
+
+
+  //header grid for LAPTOP (despite the grid's variable name)
+  // @include grid-media($tablet-grid) {
+  //
+  // }
+
+
 }
 
-#logo {
-  height: $mobile-header-element-height;
-  width: auto;
-}
 
 #greg-transparent {
   height: $mobile-header-element-height;
