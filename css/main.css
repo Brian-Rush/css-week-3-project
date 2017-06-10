@@ -30,4 +30,11 @@ header {
   width: auto;
 }
 
+main {
+  height: 75vh;
+  width: 100vw;
+  overflow: auto;
+  background-image: url("../img/bg/bg-walk-away-600.png");
+}
+
 /*# sourceMappingURL=main.css.map */
