@@ -1,0 +1,21 @@
+header {
+  height: 200px;
+  width: 100vw;
+  background-color: $eternity;
+  // $onyx: #11100b;
+  // $eternity: #1f1a11;
+  // $driftwood: #b08850;
+  // $tobacco-brown: #6b5c3d;
+  // $yellow-metal: #6f6938;
+  // $space-shuttle
+}
+
+#logo {
+  height: $mobile-header-element-height;
+  width: auto;
+}
+
+#greg-transparent {
+  height: $mobile-header-element-height;
+  width: auto;
+}
