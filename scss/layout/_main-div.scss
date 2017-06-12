@@ -1,18 +1,28 @@
 main {
-  height: 75vh;
+  height: 100%;
   width: 100vw;
   overflow: auto;
   background-image: url("../img/bg/bg-walk-away-600.png");
   background-size: cover;
-  margin-top: -8px;
+  margin-top: -17px;
+}
+
+.mobile-hidden {
+  display: none;
 }
 
 section.mobile-section {
   margin: 20px 10px 10px 10px;
-  padding: 5px;
+  padding: 15px $section-x-padding;
   background-color: rgba($blond, 0.5);
   border-radius: 5px;
   overflow: auto;
+  // @include grid-media($tablet-grid) {
+  //   @include grid-column(1);
+  //   & img {
+  //     width: 100%;
+  //   }
+  // };
   & h2 {
     text-transform: uppercase;
     padding: 5px;
@@ -21,6 +31,10 @@ section.mobile-section {
     float: left;
     margin-right: 5px;
     width: 50vw;
+    &.mobile-full-width {
+      width: 100%;
+      margin-left: auto;
+    }
   }
   & p span {
     text-transform: uppercase;
@@ -40,4 +54,69 @@ section.mobile-section:nth-of-type(even) {
     float: right;
     margin-left: 5px;
   }
+}
+
+
+
+
+ul {
+  margin-top: 10px;
+  padding-left: 50px;
+  list-style-position: outside;
+  &#rock-facts {
+    list-style: url("../img/rock-fact-25px.png");
+  }
+  & ul {
+    margin-top: 0;
+    padding-left: 15px;
+  }
+}
+
+//media queries
+//TABLET
+main {
+  @include grid-media($tablet-grid) {
+    // @include equal-height(".equal-height");
+    section.mobile-section {
+      margin: 0;
+      margin-top: 10px;
+      @include grid-column(1);
+      & img {
+        width: 100%;
+      }
+    }
+    section.mobile-section:nth-of-type(n+4) {
+      @include grid-column(3);
+      & img {
+        @include grid-column(1, $tablet-grid)
+      }
+      & .text {
+        @include grid-column(2, $tablet-grid);
+      }
+    }
+  }
+}
+
+//LAPTOP - DESKTOP
+main {
+  @include grid-media($laptop-grid) {
+    max-width: 1000px;
+    section.mobile-section {
+      margin: 0;
+      margin-top: 20px;
+      @include grid-column(2);
+      & img {
+        width: 100%;
+      }
+    }
+    section.mobile-section:nth-of-type(n+4) {
+      @include grid-column(3);
+      // & img {
+      //   @include grid-column(1, $tablet-grid)
+      // }
+      // & .text {
+      //   @include grid-column(2, $tablet-grid);
+      // }
+    }
+  };
 }
