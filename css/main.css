@@ -14,29 +14,32 @@ footer {
   font-family: "Raleway", sans-serif;
 }
 
+#logo {
+  max-width: 200px;
+  position: absolute;
+  display: inline;
+  top: 1vh;
+  left: 1vw;
+  z-index: 2;
+}
+
 header * {
   border: 1px dashed red;
 }
 
 header {
-  height: 200px;
+  height: 220px;
   width: 100vw;
   background-color: #1f1a11;
   padding-top: 20px;
-}
-header #logo {
-  width: calc(60% - 8px);
-  float: left;
-  margin-left: 5px;
-  max-height: 150px;
-  height: auto;
-  display: block;
+  padding-bottom: 20px;
+  position: relative;
 }
 header #greg-transparent {
   width: calc(40% - 7px);
   float: left;
   margin-left: 5px;
-  height: 150px;
+  height: 180px;
   display: block;
 }
 header #greg-transparent img {
@@ -49,13 +52,23 @@ header .character-name {
   width: calc(60% - 8px);
   float: left;
   margin-left: 5px;
+  position: relative;
   display: block;
+  height: 180px;
   color: #6f6938;
   letter-spacing: .3em;
 }
+header .character-name h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 50px;
+  text-align: right;
+  width: 100%;
+}
 
 #greg-transparent {
-  height: 150px;
+  height: 180px;
   width: auto;
 }
 
@@ -64,6 +77,40 @@ main {
   width: 100vw;
   overflow: auto;
   background-image: url("../img/bg/bg-walk-away-600.png");
+  background-size: cover;
+  margin-top: -8px;
+}
+
+section.mobile-section, section.mobile-section:nth-of-type(even) {
+  margin: 20px 10px 10px 10px;
+  padding: 5px;
+  background-color: rgba(250, 242, 185, 0.5);
+  border-radius: 5px;
+  overflow: auto;
+}
+section.mobile-section h2, section.mobile-section:nth-of-type(even) h2 {
+  text-transform: uppercase;
+  padding: 5px;
+}
+section.mobile-section img, section.mobile-section:nth-of-type(even) img {
+  float: left;
+  margin-right: 5px;
+  width: 50vw;
+}
+section.mobile-section p span, section.mobile-section:nth-of-type(even) p span {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+section.mobile-section a, section.mobile-section:nth-of-type(even) a {
+  color: #11100b;
+}
+section.mobile-section a:hover, section.mobile-section a:focus {
+  font-size: 1.1em;
+}
+
+section.mobile-section:nth-of-type(even) img {
+  float: right;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */
