@@ -1,7 +1,3 @@
-header * {
-  border: 1px dashed red;
-}
-
 header {
   height: 220px;
   width: 100vw;
@@ -10,23 +6,6 @@ header {
   padding-bottom: 20px;
   position: relative;
 
-  // $onyx: #11100b;
-  // $eternity: #1f1a11;
-  // $driftwood: #b08850;
-  // $tobacco-brown: #6b5c3d;
-  // $yellow-metal: #6f6938;
-  // $space-shuttle
-  // @include grid-media($header-grid);
-
-  // #logo img {
-    // @include grid-column(3, $header-grid);
-    // max-height: $mobile-header-element-height;
-    // height: auto;
-    // position: absolute;
-    // top: 100px;
-    // left: 0px;
-    // width: auto;
-  // }
   #greg-transparent {
     @include grid-column(2, $header-grid);
     height: $mobile-header-element-height;
@@ -57,16 +36,33 @@ header {
     text-align: right;
     width: 100%;
   }
-
-
-  //header grid for LAPTOP (despite the grid's variable name)
-  // @include grid-media($tablet-grid) {
-  //
-  // }
-
-
 }
 
+// header grid for LAPTOP (despite the grid's variable name)
+// .header-container {
+header {
+  @include grid-media($laptop-grid) {
+    overflow: auto;
+    %laptop-header-element {
+      @include grid-column(2, $laptop-grid);
+    }
+    #greg-transparent {
+      @extend %laptop-header-element;
+      @include grid-shift(2);
+    }
+    .character-name {
+      height: 180px;
+      overflow: auto;
+      @extend %laptop-header-element;
+      @include grid-shift(2);
+      & h1 {
+        text-align: center;
+        font-size: 5em;
+      }
+    }
+  }
+
+}
 
 #greg-transparent {
   height: $mobile-header-element-height;

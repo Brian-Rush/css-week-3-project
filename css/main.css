@@ -24,10 +24,6 @@ footer {
   z-index: 2;
 }
 
-header * {
-  border: 1px dashed red;
-}
-
 header {
   height: 220px;
   width: 100vw;
@@ -66,6 +62,31 @@ header .character-name h1 {
   font-size: 50px;
   text-align: right;
   width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    overflow: auto;
+  }
+  header #greg-transparent, header .character-name {
+    width: calc(33.33333% - 40px);
+    float: left;
+    margin-left: 30px;
+  }
+  header #greg-transparent {
+    left: calc(33.33333% - 40px + 30px);
+    position: relative;
+  }
+  header .character-name {
+    height: 180px;
+    overflow: auto;
+    left: calc(33.33333% - 40px + 30px);
+    position: relative;
+  }
+  header .character-name h1 {
+    text-align: center;
+    font-size: 5em;
+  }
 }
 
 #greg-transparent {
@@ -136,6 +157,9 @@ ul ul {
 }
 
 @media only screen and (min-width: 600px) {
+  main {
+    background-image: url("../img/bg/bg-walk-away-1000.png");
+  }
   main section.mobile-section, main section.mobile-section:nth-of-type(even) {
     margin: 0;
     margin-top: 10px;
@@ -162,10 +186,13 @@ ul ul {
     margin-left: 12px;
   }
 }
-
 @media only screen and (min-width: 1000px) {
   main {
+    background-image: url("../img/bg/bg-walk-away-full.png");
+  }
+  main .section-container {
     max-width: 1000px;
+    margin: auto;
   }
   main section.mobile-section, main section.mobile-section:nth-of-type(even) {
     margin: 0;
@@ -177,11 +204,22 @@ ul ul {
   main section.mobile-section img, main section.mobile-section:nth-of-type(even) img {
     width: 100%;
   }
+  main section.mobile-section:nth-of-type(-n+3) {
+    height: 800px;
+  }
   main section.mobile-section:nth-of-type(n+4) {
     width: calc(50% - 45px);
     float: left;
     margin-left: 30px;
   }
+  main section.mobile-section:nth-of-type(n+4) img {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+footer {
+  background-color: #6f6938;
 }
 
 /*# sourceMappingURL=main.css.map */
