@@ -1,6 +1,8 @@
 main {
   height: 100%;
   width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: auto;
   background-image: url("../img/bg/bg-walk-away-600.png");
   background-size: cover;
@@ -17,12 +19,6 @@ section.mobile-section {
   background-color: rgba($blond, 0.5);
   border-radius: 5px;
   overflow: auto;
-  // @include grid-media($tablet-grid) {
-  //   @include grid-column(1);
-  //   & img {
-  //     width: 100%;
-  //   }
-  // };
   & h2 {
     text-transform: uppercase;
     padding: 5px;
@@ -78,7 +74,6 @@ ul {
 
   @include grid-media($tablet-grid) {
     main {
-      // @include equal-height(".equal-height");
       background-image: url("../img/bg/bg-walk-away-1000.png");
       section.mobile-section {
         margin: 0;
@@ -125,9 +120,6 @@ main {
         width: 100%;
         margin: 0 0 10px 0;
       }
-      // & .text {
-      //   @include grid-column(3);
-      // }
     }
   }
 }

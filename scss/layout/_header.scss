@@ -38,23 +38,21 @@ header {
   }
 }
 
-// header grid for LAPTOP (despite the grid's variable name)
-// .header-container {
+// header grid for LAPTOP
 header {
   @include grid-media($laptop-grid) {
     overflow: auto;
     %laptop-header-element {
       @include grid-column(2, $laptop-grid);
+      @include grid-shift(2);
     }
     #greg-transparent {
       @extend %laptop-header-element;
-      @include grid-shift(2);
     }
     .character-name {
       height: 180px;
       overflow: auto;
       @extend %laptop-header-element;
-      @include grid-shift(2);
       & h1 {
         text-align: center;
         font-size: 5em;
