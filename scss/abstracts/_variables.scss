@@ -18,3 +18,21 @@ $grid-gutter-default: 20px;
 $grid-gutter-lg: 30px;
 $mobile-character-name-height: 50px;
 $section-x-padding: 10px;
+
+// grids
+$header-grid: (
+  columns: 5,
+  gutter: 5px,
+);
+
+$tablet-grid: (
+  columns: 3,
+  gutter: 12px,
+  media: 600px,
+);
+
+$laptop-grid: (
+  columns: 6,
+  gutter: 30px,
+  media: 1000px,
+);

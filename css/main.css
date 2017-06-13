@@ -1,87 +1,224 @@
-/*
-Error: Undefined variable: "$laptop-grid".
-        on line 2 of scss/abstracts/_placeholders.scss, in `grid-column'
-        from line 2 of scss/abstracts/_placeholders.scss
-        from line 6 of main.scss
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-1: @import 'scss/vendors/bourbon/bourbon';
-2: @import 'scss/vendors/neat/neat';
-3: 
-4: @import 'scss/abstracts/variables';
-5: @import 'scss/abstracts/mixins';
-6: @import 'scss/abstracts/placeholders';
-7: 
+html, body {
+  font-family: "Cardo", serif;
+  color: #1f1a11;
+}
 
-Backtrace:
-scss/abstracts/_placeholders.scss:2:in `grid-column'
-scss/abstracts/_placeholders.scss:2
-main.scss:6
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/variable.rb:49:in `_perform'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/script/tree/node.rb:58:in `perform'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:357:in `block (2 levels) in visit_mixin'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:357:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:357:in `block in visit_mixin'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `block in with_mixin'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:98:in `with_mixin'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block (2 levels) in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:328:in `block in visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `block in with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:88:in `with_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:325:in `visit_import'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `block in with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:115:in `with_frame'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/stack.rb:79:in `with_base'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `map'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:36:in `css_tree'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `each'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/usr/local/lib/ruby/gems/2.3.0/gems/sass-3.4.24/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$laptop-grid\".\A         on line 2 of scss/abstracts/_placeholders.scss, in `grid-column'\A         from line 2 of scss/abstracts/_placeholders.scss\A         from line 6 of main.scss\A \A 1: @import 'scss/vendors/bourbon/bourbon';\A 2: @import 'scss/vendors/neat/neat';\A 3: \A 4: @import 'scss/abstracts/variables';\A 5: @import 'scss/abstracts/mixins';\A 6: @import 'scss/abstracts/placeholders';\A 7: "; }
+footer {
+  font-family: "Raleway", sans-serif;
+}
+
+#logo {
+  max-width: 200px;
+  position: absolute;
+  display: inline;
+  top: 1vh;
+  left: 1vw;
+  z-index: 2;
+}
+
+header {
+  height: 220px;
+  width: 100vw;
+  background-color: #1f1a11;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+header #greg-transparent {
+  width: calc(40% - 7px);
+  float: left;
+  margin-left: 5px;
+  height: 180px;
+  display: block;
+}
+header #greg-transparent img {
+  height: 100%;
+  width: calc($mobile-header-element-height / 1.62304688);
+  display: block;
+  margin: 0 auto;
+}
+header .character-name {
+  width: calc(60% - 8px);
+  float: left;
+  margin-left: 5px;
+  position: relative;
+  display: block;
+  height: 180px;
+  color: #6f6938;
+  letter-spacing: .3em;
+}
+header .character-name h1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 50px;
+  text-align: right;
+  width: 100%;
+}
+
+@media only screen and (min-width: 1000px) {
+  header {
+    overflow: auto;
+  }
+  header #greg-transparent, header .character-name {
+    width: calc(33.33333% - 40px);
+    float: left;
+    margin-left: 30px;
+    left: calc(33.33333% - 40px + 30px);
+    position: relative;
+  }
+  header .character-name {
+    height: 180px;
+    overflow: auto;
+  }
+  header .character-name h1 {
+    text-align: center;
+    font-size: 5em;
+  }
+}
+
+#greg-transparent {
+  height: 180px;
+  width: auto;
+}
+
+main {
+  height: 100%;
+  width: 100vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  overflow: auto;
+  background-image: url("../img/bg/bg-walk-away-600.png");
+  background-size: cover;
+  margin-top: -17px;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+section.mobile-section, section.mobile-section:nth-of-type(even) {
+  margin: 20px 10px 10px 10px;
+  padding: 15px 10px;
+  background-color: rgba(250, 242, 185, 0.5);
+  border-radius: 5px;
+  overflow: auto;
+}
+section.mobile-section h2, section.mobile-section:nth-of-type(even) h2 {
+  text-transform: uppercase;
+  padding: 5px;
+}
+section.mobile-section img, section.mobile-section:nth-of-type(even) img {
+  float: left;
+  margin-right: 5px;
+  width: 50vw;
+}
+section.mobile-section img.mobile-full-width {
+  width: 100%;
+  margin-left: auto;
+}
+section.mobile-section p span, section.mobile-section:nth-of-type(even) p span {
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+section.mobile-section a, section.mobile-section:nth-of-type(even) a {
+  color: #11100b;
+}
+section.mobile-section a:hover, section.mobile-section a:focus {
+  font-size: 1.1em;
+}
+
+section.mobile-section:nth-of-type(even) img {
+  float: right;
+  margin-left: 5px;
+}
+
+ul {
+  margin-top: 10px;
+  padding-left: 50px;
+  list-style-position: outside;
+}
+ul#rock-facts {
+  list-style: url("../img/rock-fact-25px.png");
+}
+ul ul {
+  margin-top: 0;
+  padding-left: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    background-image: url("../img/bg/bg-walk-away-1000.png");
+  }
+  main section.mobile-section, main section.mobile-section:nth-of-type(even) {
+    margin: 0;
+    margin-top: 10px;
+    width: calc(33.33333% - 16px);
+    float: left;
+    margin-left: 12px;
+  }
+  main section.mobile-section img, main section.mobile-section:nth-of-type(even) img {
+    width: 100%;
+  }
+  main section.mobile-section:nth-of-type(n+4) {
+    width: calc(100% - 24px);
+    float: left;
+    margin-left: 12px;
+  }
+  main section.mobile-section:nth-of-type(n+4) img {
+    width: calc(33.33333% - 16px);
+    float: left;
+    margin-left: 12px;
+  }
+  main section.mobile-section:nth-of-type(n+4) .text {
+    width: calc(66.66667% - 20px);
+    float: left;
+    margin-left: 12px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    background-image: url("../img/bg/bg-walk-away-full.png");
+  }
+  main .section-container {
+    max-width: 1000px;
+    margin: auto;
+  }
+  main section.mobile-section, main section.mobile-section:nth-of-type(even) {
+    margin: 0;
+    margin-top: 20px;
+    width: calc(33.33333% - 40px);
+    float: left;
+    margin-left: 30px;
+  }
+  main section.mobile-section img, main section.mobile-section:nth-of-type(even) img {
+    width: 100%;
+  }
+  main section.mobile-section:nth-of-type(-n+3) {
+    height: 800px;
+  }
+  main section.mobile-section:nth-of-type(n+4) {
+    width: calc(50% - 45px);
+    float: left;
+    margin-left: 30px;
+  }
+  main section.mobile-section:nth-of-type(n+4) img {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+}
+
+footer {
+  background-color: #6f6938;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */
