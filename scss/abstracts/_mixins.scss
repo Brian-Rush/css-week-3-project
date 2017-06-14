@@ -1,7 +1,8 @@
-// @mixin transparent-bg-color($color, $background) {
-//   $percent: alpha($color) * 100%;
-//   $opaque: opacify($color, 1);
-//   $solid-color: mix($opaque, $background, $percent);
-//   background-color: $solid-color;
-//   background-color: $color;
-// }
+
+@mixin bg-image ($width) {
+  $file: "bg-walk-away";
+  $number: strip-units($width);
+
+  background-image: url("../img/bg/#{file}"-"#{$number}.png");
+  // background-size: cover;
+}

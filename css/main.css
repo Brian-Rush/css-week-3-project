@@ -156,7 +156,7 @@ ul ul {
 
 @media only screen and (min-width: 600px) {
   main {
-    background-image: url("../img/bg/bg-walk-away-1000.png");
+    background-image: url("../img/bg/file"-"1000.png");
   }
   main section.mobile-section, main section.mobile-section:nth-of-type(even) {
     margin: 0;
@@ -186,7 +186,7 @@ ul ul {
 }
 @media only screen and (min-width: 1000px) {
   main {
-    background-image: url("../img/bg/bg-walk-away-full.png");
+    background-image: url("../img/bg/file"-"1920.png");
   }
   main .section-container {
     max-width: 1000px;
@@ -215,7 +215,6 @@ ul ul {
     margin: 0 0 10px 0;
   }
 }
-
 footer {
   background-color: #6f6938;
   padding: 5px;

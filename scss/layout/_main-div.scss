@@ -53,8 +53,6 @@ section.mobile-section:nth-of-type(even) {
 }
 
 
-
-
 ul {
   margin-top: 10px;
   padding-left: 50px;
@@ -74,7 +72,8 @@ ul {
 
   @include grid-media($tablet-grid) {
     main {
-      background-image: url("../img/bg/bg-walk-away-1000.png");
+      @include bg-image(1000px);
+      // background-image: url("../img/bg/bg-walk-away-1000.png");
       section.mobile-section {
         margin: 0;
         margin-top: 10px;
@@ -96,9 +95,10 @@ ul {
 }
 
 //LAPTOP - DESKTOP
-main {
-  @include grid-media($laptop-grid) {
-    background-image: url("../img/bg/bg-walk-away-full.png");
+@include grid-media($laptop-grid) {
+  main {
+    @include bg-image($laptop-image-width);
+    // background-image: url("../img/bg/bg-walk-away-1920.png");
     .section-container {
       max-width: 1000px;
       margin: auto;
